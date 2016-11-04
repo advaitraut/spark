@@ -44,7 +44,7 @@ notifications:
 # 5. Run maven install before running lint-java.
 install:
   - export MAVEN_SKIP_RC=1
-  - mvn -T 4 -q -Pyarn -Phadoop-2.6 -Dscala-2.11 -DskipTests clean package install
+  - mvn -T 4 -q -Pyarn -Phadoop-2.6 -Dscala-2.11 -DskipTests install
 
 # 6. Run lint-java.
 script:
